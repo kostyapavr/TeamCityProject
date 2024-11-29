@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwinPrimes", "TwinPrimes.csproj", "{908AC0E2-5D2C-46E8-BEAC-7D32BAC659E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "..\TestProject\TestProject.csproj", "{67E6A895-8B05-4EB2-9233-1CA908036309}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{908AC0E2-5D2C-46E8-BEAC-7D32BAC659E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{908AC0E2-5D2C-46E8-BEAC-7D32BAC659E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{908AC0E2-5D2C-46E8-BEAC-7D32BAC659E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E6A895-8B05-4EB2-9233-1CA908036309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E6A895-8B05-4EB2-9233-1CA908036309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E6A895-8B05-4EB2-9233-1CA908036309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E6A895-8B05-4EB2-9233-1CA908036309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

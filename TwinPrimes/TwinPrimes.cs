@@ -1,13 +1,12 @@
 ﻿namespace TwinPrimes
 {
-    internal class TwinPrimes
+    public class TwinPrimes
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Парные простые числа");
             int n = 1;
             Console.Write("Введите число: ");
-            n = "123";
             bool suc = int.TryParse(Console.ReadLine(), out n);
             if (!suc)
             {
@@ -15,22 +14,14 @@
                 return;
             }
 
-            int pairCnt = 1;
-            int i = 1;
-            while (pairCnt <= n)
+            int num = 1;
+            for (int i = 0; i < n; i++)
             {
-                int num1 = 6 * i - 1;
-                int num2 = 6 * i + 1;
-                if (isPrime(num1) && isPrime(num2))
-                {
-                    Console.WriteLine($"Пара {pairCnt}: ({num1}, {num2})");
-                    pairCnt++;
-                }
-                i++;
+                Console.WriteLine($"Пара {i+1}: {getNextPair(ref num)}");
             }
         }
 
-        static bool isPrime(int n)
+        public static bool isPrime(int n)
         {
             int p = (int)Math.Sqrt(n);
             for (int i = 2; i <= p; i++)
@@ -38,6 +29,20 @@
                 if (n % i == 0) return false;
             }
             return true;
+        }
+
+        public static string getNextPair(ref int i)
+        {
+            int num1 = 6 * i - 1;
+            int num2 = 6 * i + 1;
+            while (!(isPrime(num1) && isPrime(num2)))
+            {
+                i++;
+                num1 = 6 * i - 1;
+                num2 = 6 * i + 1;
+            }
+            i++;
+            return $"({num1}, {num2})";
         }
     }
 }
