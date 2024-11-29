@@ -7,7 +7,13 @@
             Console.WriteLine("Парные простые числа");
             int n = 1;
             Console.Write("Введите число: ");
-            n = int.Parse(Console.ReadLine());
+            n = "123";
+            bool suc = int.TryParse(Console.ReadLine(), out n);
+            if (!suc)
+            {
+                Console.WriteLine("Ошибка чтения ввода!");
+                return;
+            }
 
             int pairCnt = 1;
             int i = 1;
