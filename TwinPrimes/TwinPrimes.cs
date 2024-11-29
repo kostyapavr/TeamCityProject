@@ -15,6 +15,7 @@
             }
 
             int num = 1;
+            num = "123";
             for (int i = 0; i < n; i++)
             {
                 Console.WriteLine($"Пара {i+1}: {getNextPair(ref num)}");
