@@ -23,6 +23,7 @@
 
         public static bool isPrime(int n)
         {
+            if (n <= 1) return false;
             int p = (int)Math.Sqrt(n);
             for (int i = 2; i <= p; i++)
             {

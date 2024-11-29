@@ -10,12 +10,21 @@ namespace TestProject
         }
 
         [Test]
-        public void TestPrime()
+        public void TestPrimesTrue()
+        {
+            Assert.That(isPrime(11));
+            Assert.That(isPrime(59));
+            Assert.That(isPrime(101));
+            Assert.That(isPrime(3));
+        }
+
+        [Test]
+        public void TestPrimesFalse()
         {
             Assert.That(!isPrime(6));
-            Assert.That(isPrime(11));
-            Assert.That(isPrime(101));
-            Assert.That(!isPrime(66));
+            Assert.That(!isPrime(105));
+            Assert.That(!isPrime(-1));
+            Assert.That(!isPrime(81));
         }
 
         [Test]
